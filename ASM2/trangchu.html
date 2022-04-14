@@ -1,0 +1,410 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./trangchu.css">
+    <link rel="stylesheet" href="giohang.html">
+</head>
+<body>
+    <div class="phongtren">
+        <div class="dangnhap">
+            <div class="text">
+                <li><a href="./giohang.html"><h3 class="d1">Đăng nhập</h3></a></li>
+                <h3 class="d2">/</h3>
+                <li><a href=""><h3 class="d3">Đăng kí</h3></a></li>
+            </div>
+        </div>
+        <div class="giohang">
+            <li><a href="./giohang.html"><h3>Giỏ hàng</h3></a></li>
+        </div>
+        <div class="logo">
+            <h1 class="thanhtam">Thanh Tâm</h1>
+            <h1 class="sneaker">Sne☆ker</h1>
+        </div>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="./trangchu.html">Trang chủ</a></li>
+            <li><a href="">Giới thiệu</a></li>
+            <li><a href="">Phụ kiện khác</a></li>
+            <li><a href="">Tin tức</a></li>
+            <li><a href="">Liên hệ</a></li>
+        </ul>
+    </div>
+    <div class="banner">
+        <div class="anhbanner">
+            <div id="slide">    
+                <img id="img" src="images/1.png">
+            </div>
+            <script>
+                var arr_img = [
+                    "images/1.png",
+                    "images/2.png",
+                    "images/3.png",
+                ]
+                var index = 0;
+                function next(){
+                    index++;
+                    if (index >= arr_img.length) index = 0;
+                    var img = document.getElementById("img");
+                    img.src = arr_img[index];
+                    document.getElementById("dem").innerHTML =  index +"/"+arr_img.length;
+                }
+                function prev() {
+                    index--;
+                    if (index <0) index = arr_hinh.length - 1;
+                    var img = document.getElementById("img");
+                    img.src = arr_img[index];
+                    document.getElementById("dem").innerHTML = index +"/"+arr_img.length;
+                }
+                setInterval("next()",3000)
+            </script>
+        </div>
+        <div class="baanh">
+            <div>
+                <a href="#"><img src="./anh_1.jpg"></a>
+                <a href="#"><img src="./anh_2.jpg"></a>
+                <a href="#"><img src="./anh_3.jpg"></a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="chu">
+            <div>
+                <ul>
+                   <li><a href="">SẢN PHẨM MỚI</a></li>
+                   <li><a href="">SẢN PHẨM PHỔ BIẾN</a></li>
+                   <li><a href="">SẢN PHẨM BÁN CHẠY</a></li>
+                </ul>
+            </div>
+        </div>
+            <div class="hr">
+            </div>
+            <div class="image">
+                <ul>
+                    <li>
+                        <div class="img1">
+                        <a href=""><img src="./anh01.jpg" alt=""></a>
+                        </div>
+                        <div class="infor">
+                            <p class="name">Chuck Taylor Classic</p>
+                            <div class="gia">1.200.000 đ</div>
+                            <a href="" class="buynow">Mua Ngay</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img1">
+                        <a href=""><img src="./anh02.jpg" alt=""></a>
+                        </div>
+                        <div class="infor">
+                            <p class="name">Chuck Taylor Classic</p>
+                            <div class="gia">1.200.000 đ</div>
+                            <a href="" class="buynow">Mua Ngay</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img1">
+                        <a href=""><img src="./women-classic-2.jpg" alt=""></a>
+                        </div>
+                        <div class="infor">
+                            <p class="name">Chuck Taylor Classic</p>
+                            <div class="gia">1.200.000 đ</div>
+                            <a href="" class="buynow">Mua Ngay</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img1">
+                        <a href=""><img src="./anh04.jpg" alt=""></a>
+                        </div>
+                        <div class="infor">
+                            <p class="name">Chuck Taylor Classic</p>
+                            <div class="gia">1.200.000 đ</div>
+                            <a href="" class="buynow">Mua Ngay</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="textnew">
+                <ul>
+                    <li><p>PHỤ KIỆN KHÁC</p></li>
+                </ul>
+            </div>
+            <div class="hr1"> </div>
+            <div class="image1">
+                <ul>
+                    <li>
+                        <div class="img2">
+                            <a href=""><img src="./jogger.jpg" alt=""></a>
+                            <a href="" class="buynow1">Thêm vào giỏ</a>
+                        </div>
+                        <div class="infor1">
+                            <p class="name1">Converse Star Chevron jogger</p>
+                            <div class="gia2">1.200.000 đ</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img2">
+                            <a href=""><img src="./anh05.jpg" alt=""></a>
+                            <a href="" class="buynow1">Thêm vào giỏ</a>
+                        </div>
+                        <div class="infor1">
+                            <p class="name1">Converse Star Chevron jogger</p>
+                            <div class="gia2">1.200.000 đ</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img2">
+                            <a href=""><img src="./anh06.jpg" alt=""></a>
+                            <a href="" class="buynow1">Thêm vào giỏ</a>
+                        </div>
+                        <div class="infor1">
+                            <p class="name1">Converse Star Chevron jogger</p>
+                            <div class="gia2">1.200.000 đ</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img2">
+                            <a href=""><img src="./anh07.jpg" alt=""></a>
+                            <a href="" class="buynow1">Thêm vào giỏ</a>
+                        </div>
+                        <div class="infor1">
+                            <p class="name1">Converse Star Chevron jogger</p>
+                            <div class="gia2">1.200.000 đ</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img2">
+                            <a href=""><img src="./anh08.jpg" alt=""></a>
+                            <a href="" class="buynow1">Thêm vào giỏ</a>
+                        </div>
+                        <div class="infor1">
+                            <p class="name1">Converse Star Chevron jogger</p>
+                            <div class="gia2">1.200.000 đ</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img2">
+                            <a href=""><img src="./anh09.jpg" alt=""></a>
+                            <a href="" class="buynow1">Thêm vào giỏ</a>
+                        </div>
+                        <div class="infor1">
+                            <p class="name1">Converse Star Chevron jogger</p>
+                            <div class="gia2">1.200.000 đ</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img2">
+                            <a href=""><img src="./anh011.jpg" alt=""></a>
+                            <a href="" class="buynow1">Thêm vào giỏ</a>
+                        </div>
+                        <div class="infor1">
+                            <p class="name1">Converse Star Chevron jogger</p>
+                            <div class="gia2">1.200.000 đ</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img2">
+                            <a href=""><img src="./anh013.jpg" alt=""></a>
+                            <a href="" class="buynow1">Thêm vào giỏ</a>
+                        </div>
+                        <div class="infor1">
+                            <p class="name1">Converse Star Chevron jogger</p>
+                            <div class="gia2">1.200.000 đ</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="textnew1">
+                <a href=""><p>Xem thêm</p></a>
+            </div>
+            <div class="textgiamgia">
+                <p>SẢN PHẨM GIÁM GIÁ</p>
+            </div>
+            <div class="hr3"> </div>
+            <div class="image2">
+                <ul>
+                    <li>
+                        <div class="img3">
+                            <img class="icon" src="./sale.jpg" alt="">
+                            <a href=""><img src="./anh0.jpg" alt=""></a>
+                            <a href="" class="buynow1">Thêm vào giỏ</a>
+                        </div>
+                        <div class="infor2">
+                            <p class="name2">Converse Star Chevron jogger</p>
+                                <div class="gia">
+                                    <div class="gia3">1.200.000 đ</div>
+                                    <div class="gia4">600.000 đ</div>
+                                </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img3">
+                            <img class="icon" src="./sale.jpg" alt="">
+                            <a href=""><img src="./anh014.jpg" alt=""></a>
+                            <a href="" class="buynow1">Thêm vào giỏ</a>
+                        </div>
+                        <div class="icon">
+                            <img src="" alt="">
+                        </div>
+                        <div class="infor2">
+                            <p class="name2">Converse Star Chevron jogger</p>
+                            <div class="gia">
+                                <div class="gia3">1.200.000 đ</div>
+                                <div class="gia4">600.000 đ</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img3">
+                            <img class="icon" src="./sale.jpg" alt="">
+                            <a href=""><img src="./anh015.jpg" alt=""></a>
+                            <a href="" class="buynow1">Thêm vào giỏ</a>
+                        </div>
+                        <div class="icon">
+                            <img src="" alt="">
+                        </div>
+                        <div class="infor2">
+                            <p class="name2">Converse Star Chevron jogger</p>
+                            <div class="gia">
+                                <div class="gia3">1.200.000 đ</div>
+                                <div class="gia4">600.000 đ</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img3">
+                            <img class="icon" src="./sale.jpg" alt="">
+                            <a href=""><img src="./anh016.jpg" alt=""></a>
+                            <a href="" class="buynow1">Thêm vào giỏ</a>
+                        </div>
+                        <div class="icon">
+                            <img src="" alt="">
+                        </div>
+                        <div class="infor2">
+                            <p class="name2">Converse Star Chevron jogger</p>
+                            <div class="gia">
+                                <div class="gia3">1.200.000 đ</div>
+                                <div class="gia4">600.000 đ</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img3">
+                            <img class="icon" src="./sale.jpg" alt="">
+                            <a href=""><img src="./anh017.jpg" alt=""></a>
+                            <a href="" class="buynow1">Thêm vào giỏ</a>
+                        </div>
+                        <div class="icon">
+                            <img src="" alt="">
+                        </div>
+                        <div class="infor2">
+                            <p class="name2">Converse Star Chevron jogger</p>
+                            <div class="gia">
+                                <div class="gia3">1.200.000 đ</div>
+                                <div class="gia4">600.000 đ</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img3">
+                            <img class="icon" src="./sale.jpg" alt="">
+                            <a href=""><img src="./anh018.jpg" alt=""></a>
+                            <a href="" class="buynow1">Thêm vào giỏ</a>
+                        </div>
+                        <div class="icon">
+                            <img src="" alt="">
+                        </div>
+                        <div class="infor2">
+                            <p class="name2">Converse Star Chevron jogger</p>
+                            <div class="gia">
+                                <div class="gia3">1.200.000 đ</div>
+                                <div class="gia4">600.000 đ</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img3">
+                            <img class="icon" src="./sale.jpg" alt="">
+                            <a href=""><img src="./anh019.jpg" alt=""></a>
+                            <a href="" class="buynow1">Thêm vào giỏ</a>
+                        </div>
+                        <div class="icon">
+                            <img src="" alt="">
+                        </div>
+                        <div class="infor2">
+                            <p class="name2">Converse Star Chevron jogger</p>
+                            <div class="gia">
+                                <div class="gia3">1.200.000 đ</div>
+                                <div class="gia4">600.000 đ</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img3">
+                            <img class="icon" src="./sale.jpg" alt="">
+                            <a href=""><img src="./anh020.jpg" alt=""></a>
+                            <a href="" class="buynow1">Thêm vào giỏ</a>
+                        </div>
+                        <div class="icon">
+                            <img src="" alt="">
+                        </div>
+                        <div class="infor2">
+                            <p class="name2">Converse Star Chevron jogger</p>
+                            <div class="gia">
+                                <div class="gia3">1.200.000 đ</div>
+                                <div class="gia4">600.000 đ</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    </div>
+    <div class="footer">
+        <div class="gt">
+            <h3 class="gt_1">GIỚI THIỆU</h3> 
+            <hr>
+            <div class="text_1">
+            <p>Chào mừng bạn đến với ngôi nhà Converse! <br></p>
+            <p>Tại đây, mỗi một dòng chữ, mỗi chi tiết và<br></p>
+            <p>hình ảnh đều là những bằng chứng mang<br></p>
+            <p>dấu ấn lịch sử Converse 100 năm, và đang<br></p>
+            <p>không ngừng phát triển lớn mạnh.</p>
+            </div>
+        </div>
+        <div class="dc">
+            <h3 class="dc_1">ĐỊA CHỈ</h3>
+            <hr>
+            <div class="text_2">
+                <p>ĐC: 319 C16 Lý Thường Kiệt, Phường 15,<br> Quận 11, Tp.HCM</p>
+                <p>hotline: 076 922 0162</p>
+                <p>Email: tamtt.140203@gmail.com</p>
+            </div>
+        </div>
+        <div class="mn">
+            <h3 class="mn_1">MENU</h3>
+            <hr>
+            <div class="text_3">
+                <a href="./index.html"><p>Trang chủ</p></a>
+                <a href=""><p>Tin tức</p></a>
+                <a href=""><p>Liên hệ</p></a>
+                <a href=""><p>Địa chỈ</p></a>
+            </div>
+        </div>
+        <div class="mxh">
+            <h3 class="mxh_1">MẠNG XÃ HỘI</h3>
+            <hr>
+            <div class="text_4">
+                <ul>
+                    <li>
+                        <a href=""><img src="./youtobe1.png" alt="" width="5%"></a>
+                        <a href="https://www.facebook.com/tamtt1402/"><img src="./768px-Facebook-icon-1.png" alt="" width="5%"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://uhchat.net/code.php?f=9f273a"></script>
+</body>
+</html>

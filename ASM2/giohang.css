@@ -1,0 +1,22 @@
+.container{
+    width: 700px;
+    margin: 20px auto;
+    background-color: aqua;
+    min-height: 400px;
+    
+}
+table{
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: 30px;
+    text-align: center;
+}
+caption{
+    padding: 20px;
+    font-size: 20pt;
+    font-weight: 16pt;
+    color: brown;
+}
+input{
+    text-align: center;
+}

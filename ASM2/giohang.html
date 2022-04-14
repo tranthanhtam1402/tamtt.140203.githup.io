@@ -1,0 +1,72 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="./giohang.js">
+    <link rel="stylesheet" href="./giohang.css">
+</head>
+
+<body>
+    <div class="container">
+        <table border="1" id="sp">
+            <caption>DANH MỤC SẢN PHẨM</caption>
+            <tr>
+                <th><input type="checkbox" id="chonhet" checked onclick="chonhet();"></th>
+                <th>Tên sản phẩm</th>
+                <th>Đơn giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền</th>
+                <th>Mua hàng</th>
+            </tr>
+            <tr>
+                <th><input class="chk" type="checkbox" checked onchange="thayDoiTT(this);"></th>
+                <th>Hạnh phúc trọn vẹn</th>
+                <th><span>900000</span>đ</th>
+                <th><input type="number" value="1" min="1" max="10" onchange="tinhTT(this);"></th>
+                <th><span>900000</span>đ</th>
+                <th><button type="button" onclick="themGH(this);">Chọn</button></th>
+            </tr>
+            <tr>
+                <th><input class="chk" type="checkbox" checked onchange="thayDoiTT(this);"></th>
+                <th>Con đường thành công</th>
+                <th><span>1700000</span>đ</th>
+                <th><input type="number" value="1" min="1" max="10" onchange="tinhTT(this);"></th>
+                <th><span>1700000</span>đ</th>
+                <th><button type="button" onclick="themGH(this);">Chọn</button></th>
+            </tr>
+            <tr>
+                <th><input class="chk" type="checkbox" checked onchange="thayDoiTT(this);"></th>
+                <th>Con đường thành công</th>
+                <th><span>1700000</span>đ</th>
+                <th><input type="number" value="1" min="1" max="10" onchange="tinhTT(this);"></th>
+                <th><span>1700000</span>đ</th>
+                <th><button type="button" onclick="themGH(this);">Chọn</button></th>
+            </tr>
+            <tr>
+                <th><input class="chk" type="checkbox" checked onchange="thayDoiTT(this);"></th>
+                <th>Con đường thành công</th>
+                <th><span>1700000</span>đ</th>
+                <th><input type="number" value="1" min="1" max="10" onchange="tinhTT(this);"></th>
+                <th><span>1700000</span>đ</th>
+                <th><button type="button" onclick="themGH(this);">Chọn</button></th>
+            </tr>
+            <tr>
+                <th><input class="chk" type="checkbox" checked onchange="thayDoiTT(this);"></th>
+                <th>Con đường thành công</th>
+                <th><span>1700000</span>đ</th>
+                <th><input type="number" value="1" min="1" max="10" onchange="tinhTT(this);"></th>
+                <th><span>1700000</span>đ</th>
+                <th><button type="button" onclick="themGH(this);">Chọn</button></th>
+            </tr>
+        </table>
+        <table id="gh" border="1">
+            <caption>
+                GIỎ HÀNG CỦA BẠN <br> Hiện có <span id="somh">0</span>, tổng thành tiền là: <span id="tongtt">0</span>
+            </caption>
+        </table>
+    </div>
+</body>
+</html>

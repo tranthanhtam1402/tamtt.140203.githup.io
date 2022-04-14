@@ -1,0 +1,432 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+.phongtren{
+    height: 100px;
+    background: #020202;
+}
+.menu{
+    height: 66px;
+    background: #dcdcdc;
+}
+.banner{
+    height: 625px;
+}.content{
+    height: 2150px;
+    background: #ffffff;
+}
+.footer{
+    height: 380px;
+    background: #171717;
+}
+.dangnhap .text .d1 {
+    color: #ffffff;
+    font-variant:small-caps;
+    float: left;
+    padding-left: 215px;
+    padding-top: 38px;
+}
+.dangnhap .text .d2{
+    color: #ffffff;
+    font-variant:small-caps;
+    float: left;
+    padding-left: 2px;
+    padding-top: 21px;
+}
+.dangnhap .text .d3{
+    color: #ffffff;
+    font-variant:small-caps;
+    float: left;
+    padding-left: 4px;
+    padding-top: 21px;
+}
+.dangnhap .text h3:hover{
+    text-decoration: underline;
+}
+.logo {
+    margin-top: -59px;
+}
+.logo .thanhtam{
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-left: 680px;
+}
+.logo .sneaker{
+    color: #ffffff;
+    font-variant:small-caps;
+    padding-top: auto;
+    padding-left: 720px;;
+}
+.giohang h3{
+    color: #ffffff;
+    font-variant:small-caps;
+    float: right;
+    padding-right: 215px; 
+    padding-top: 1px;
+}
+.giohang h3:hover{
+    text-decoration: underline;
+}
+.menu{
+    padding-left: 350px;
+}
+.menu ul li{
+    font-variant:small-caps ;
+    float: left;
+    list-style: none;
+    line-height: 66px;
+    padding-left: 60px;
+}
+.menu ul li a{
+    color: #020202;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 21px;
+}
+.menu ul li a:hover{
+    text-decoration: underline;
+}
+.banner .anhbanner img{
+    margin-top: 52px;
+    margin-left: 126px;
+    width: 1300px;
+    height: 500px;
+}
+.baanh{
+    display: flex;
+    justify-content: space-between;
+    float: left;
+    padding-left: 158px;
+    padding-top: 50px;
+}
+.baanh div img{
+    width: 30%;
+    padding: 10px;
+}
+.baanh div img:hover{
+    border: 1px solid black;
+}
+.content .chu{
+    background: #ffffff;
+    height: 80px;
+    margin: 250px;
+}
+.chu ul li{
+    float: left;
+    list-style: none;
+    line-height: 80px;
+    padding-left: 160px;
+}
+.chu ul li a{
+    color: #868282;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.hr{
+    height: 3px;
+    background: #868282;
+    margin-top: -270px;
+}
+.image ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    float: left;
+    padding: 10px;
+}
+.image ul li{
+    flex-basis: 20%;
+}
+.image ul li img{
+    max-width: 100%;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.image ul li .buynow{
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: red;
+    color: #ffffff;
+    padding: auto;
+}
+.image ul li .infor{
+    text-align: center;
+    margin: 5px;
+}
+.image ul li .infor .gia{
+    margin: 5px;
+    color: red;
+}
+.textnew{
+    background: #ffffff;
+    height: 80px;
+    margin: 250px;
+    font-size: 18px;
+}
+.textnew ul li{
+    padding-top: 50px;
+    float: left;
+    list-style: none;
+    line-height: 80px;
+    padding-left: 440px;
+}
+.hr1{
+    height: 3px;
+    background: #868282;
+    margin-top: -180px;
+}
+.image1 ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    float: left;
+    padding: 10px;
+}
+.image1 ul li{
+    flex-basis: 25%;
+    box-sizing: border-box;
+}
+.image1 ul li img{
+    max-width: 100%;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.image1 ul li .img2{
+    position: relative;
+    overflow: hidden;
+}
+.image1 ul li .img2{
+    display: block;
+}
+.image1 ul li .img2 img{
+    display: block;
+}
+.image1 ul li .buynow1{
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: red;
+    color: #ffffff;
+    padding: 5px 0px;
+    position: absolute;
+    width: 100%;
+    bottom: -28px;
+    transition: 0.25s, ease-in;
+    opacity: 0.6;
+}
+.image1 ul li:hover .buynow1 {
+    bottom: 0px;
+}
+.image1 ul li .infor1{
+    text-align: center;
+    margin: 5px;
+}
+.image1 ul li .infor1 .gia2{
+    margin: 5px;
+    color: red;
+}
+.xemtatca{
+    text-align: center;
+    padding-top: 20px;
+}
+.xemtatca p{
+    padding-top: 10px;
+    border: 2px solid #868282;
+}
+.textnew1{
+    text-align: center;
+}
+.textnew1 p{
+    padding: 10px 20px;
+    border: 2px solid #868282;
+    display: inline-block;
+    color:#868282;
+}
+.textnew1 p:hover{
+    background: #000000;
+    color: #ffffff;
+}
+.textgiamgia{
+    list-style: none;
+    text-align: center;
+    margin: 80px;
+    font-size: 18px;
+}
+.hr3{
+    height: 3px;
+    background: #868282;
+    margin-top: -70px;
+}
+.image2 ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    float: left;
+    padding: 10px;
+}
+.image2 ul li{
+    flex-basis: 25%;
+    box-sizing: border-box;
+}
+.image2 ul li img{
+    max-width: 100%;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.image2 ul li .infor2{
+    text-align: center;
+    margin: 5px;
+}
+.gia{
+    display: flex;
+    padding-left: 90px;
+
+}
+.image2 ul li .infor2 .gia3{
+    margin: 5px;
+    color: rgb(173, 166, 166);
+    text-decoration: line-through;
+}
+.image2 ul li .infor2 .gia4{
+    margin: 5px;
+    color: red;
+}
+.image2 .img3 .icon{
+    width: 40%;
+    top: px;
+    left: 0px;
+}
+.image2 ul li .img3{
+    padding:20px;
+}
+.image2 ul li .img3{
+    position: relative;
+    overflow: hidden;
+}
+.image2 ul li .img3{
+    display: block;
+}
+.image2 ul li .img3 img{
+    display: block;
+}
+.image2 ul li .buynow1{
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: red;
+    color: #ffffff;
+    padding: 5px 0px;
+    position: absolute;
+    width: 100%;
+    bottom: -28px;
+    transition: 0.25s, ease-in;
+    opacity: 0.6;
+}
+.image2 ul li:hover .buynow1 {
+    bottom: 0px;   
+}
+.footer1{
+    padding-left: 40px;
+}
+.gt{
+    float: left;
+    padding-left: 200px;
+    padding-top: 50px;
+}
+.gt .gt_1{
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+hr{
+    width: 70px;
+    margin-top: 7px;
+    background: #c30005;
+    border: 1px solid #c30005;
+}
+.gt .text_1{
+    color: #e0d7d7;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.dc{
+    float: left;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+.dc .dc_1{
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.dc .text_2{
+    color: #e0d7d7;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.mn{
+    float: left;
+    padding-left: 110px;
+    padding-top: 50px;
+}
+.mn .mn_1{
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.mn .text_3 {
+    color: #e0d7d7;
+    margin-top: 10px;
+    font-size: 16px;
+    list-style: none;
+    text-decoration: none;
+}
+.mn .text_3 a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #e0d7d7;
+}
+.mn .text_3 a:hover{
+    color: #c30005;
+}
+.mxh{
+    float: right;
+    padding-left:  0px;
+    padding-top: 50px;
+    margin-right: -920px;
+}
+.mxh .mxh_1{
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.mxh ul li{
+    padding-top: 10px;
+    padding-right: -30px;
+    list-style: none;
+    padding-top: 10px;
+}
+.hr_1 hr{
+    width: 500px;
+    
+    background: #c30005;
+    border: 1px solid #c30005;
+}
+
+
+
+
+
+
+
+
