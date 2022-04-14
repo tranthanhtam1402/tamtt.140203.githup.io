@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tamtt_PS21219</title>
+    <link rel="stylesheet" href="./bai1.css">
+</head>
+<body>
+    <form id="form1">
+        <h2>ĐĂNG KÝ THÀNH VIÊN</h2>
+        <p>
+            <label>Mã sinh viên</label><br>
+            <input id="masv" type="text" class="txt">
+        </p>
+        <p>
+            <label>Họ và tên</label><br>
+            <input id="hoten" type="text"class="txt">
+        </p>
+        <p>
+            <label>Email</label><br>
+            <input id="email" type="email" class="txt">
+        </p>
+        <p>
+            <fieldset id="fs1">
+                <legend>Giới tính</legend>
+                <input type="radio" name="phai" value="Nam"><label>Nam</label>
+                <input type="radio" name="phai" value="Nữ"><label>Nữ</label><br>
+            </fieldset>
+        </p>
+<p>       
+    <fieldset id="fs2">
+        <legend>Sở thích</legend>
+        <input type="checkbox" name="st"><label>Đọc sách</label>
+        <input type="checkbox" name="st"><label>Du lịch</label>
+        <input type="checkbox" name="st"><label>Ẩm thực</label>
+        <input type="checkbox" name="st"><label>Âm nhạc</label>
+        <input type="checkbox" name="st"><label>Khác</label>
+   </fieldset>
+</p>
+<p>
+   <label>Quốc tịch</label><br>
+   <select id="quoctich" class="txt">
+        <option value="0">Chọn quốc tịch</option>
+        <option value="1">Việt Nam</option>
+        <option value="2">Vũ Hán</option>
+        <option value="3">Campuchia</option>
+   </select>
+</p>
+<p>
+    <label>Ghi chú</label><br>
+    <textarea id="ghichu" cols="54" rows="5" class="txt"></textarea>
+</p>
+<div id="baoloi"></div>
+<button type="button" id="dangki" onclick=" return kiemtra();">Đăng kí</button>
+</form>
+</body>
+<script>
+    function kiemtra() {
+    var loi = "";
+// kiểm tra mã sinh viên
+    var masv= document.getElementById("masv");
+   if (masv.value==""){
+        masv.className="loi";
+        loi = "Mã sinh viên không được bỏ trống<br>";
+   }else if(masv.value.length!=7){
+        masv.className="loi";
+        loi += "Mã sinh viên không đúng 7 ký tự <br>";
+    }
+    else masv.className="txt";
+}
+// kiểm tra họ và tên
+    var hoten= document.getElementById("hoten");
+    if(hoten.value==""){
+        hoten.className="loi";
+        loi += "Họ và tên không được bỏ trống.<br>";
+    }else if(hoten.value.length>30){
+        hoten.className="loi";
+        loi += "Họ tên quá dài.<br>";
+    }else hoten.className="txt";
+//kiếm tra email
+    var email= document.getElementById("email");
+    if(email.value==""){
+    email.className="loi";
+    loi += "Email không được bỏ trống.<br>";
+    }
+    else email.className="txt";
+//kiếm tra phái
+    dem=0;
+    var arr_phai= document.getElementsByName ("phai");
+    for (var i=0; i<arr_phai.length; i++){
+    if(arr_phai[i].checked =true) dem++;
+    }
+    if(dem=-0){
+    document.getElementById ("fsi").className="loi";
+    loi += "Phải chọn giới tính.<br>";
+    }else document.getElementById("fs1").className=""
+ 
+//kiểm tra sở thích
+    arr_sothich= document.getElementsByName ("st");
+    dem=0;
+    for (var i=0;i<arr_sothich.length;i++){
+    if(arr_sothich[i].checked) dem++;
+    }//for
+    if(dem-=0){
+    document.getElementiyId("fs2").className="loi";
+    loi += "Phải chọn ít nhất 1 sở thích.<br>";
+    }else document.getElementById("fs2").className="";
+// kiểm tra quốc tịch
+    var qt = document.getElementById("quoctich");
+    if (qt.value==0){
+    qt.className="loi";
+    loi += "Phải chọn quốc tịch.<br>";
+    }
+    else qt.className="txt";
+// kiếm tra ghi chú
+    var gc= document.getElementById('ghichu');
+    if(gc.value.length>200){
+        gc.className="1loi";
+        loi += "Ghi chú phải dưới 200 kí tự.<br>";
+    }else gc.className="txt";
+// kiếm tra
+    if(loi!=""){
+        document.getElementById('baoloi').innerHTML=loi;
+        return false;
+    }
+</script>
+</html>
